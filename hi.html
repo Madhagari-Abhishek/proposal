@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oii Nee Lokam ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: white;
+      text-shadow: 2px 2px 10px red;
+      animation: heartbeat 2s infinite;
+      z-index: 1;
+      position: absolute;
+      top: 10%;
+      text-align: center;
+      width: 100%;
+    }
+
+    .container {
+      position: absolute;
+      right: 15%;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px red;
+      width: 500px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .container h2 {
+      color: white;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 10px red;
+    }
+
+    .container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .container button {
+      padding: 10px;
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: background 0.3s;
+      margin-top: 10px;
+      align-self: center;
+    }
+
+    .container button:hover {
+      background: darkred;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay loop muted>
+    <source src="background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  <div class="container">
+    <h2>For My Love ❤️</h2>
+    <img src="image.jpg" alt="Love Image">
+    <button onclick="window.location.href='letter.html'">Open Letter</button>
+  </div>
+</body>
+</html>
